@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<link rel="manifest" href="manifest.json">
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>The Wedding of Ahmad Fahmi & Ni'matul</title>
+
+<link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<meta name="theme-color" content="#071A35">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<meta name="apple-mobile-web-app-title"
+content="Wedding Invitation">
+
+<meta name="format-detection"
+content="telephone=no">
+
+</head>
+
+<<body>
+
+<div id="progressBar"></div>
+
+<div id="cover">
+
+    <div class="card">
+
+        <h4>THE WEDDING OF</h4>
+
+        <h1>Ahmad Fahmi</h1>
+
+        <h2>&</h2>
+
+        <h1>Ni'matul Laili</h1>
+
+        <p>04 Agustus 2026</p>
+
+        <button id="openBtn">
+            💙 Buka Undangan
+        </button>
+
+    </div>
+
+</div>
+
+<div id="content">
+
+<h2>Assalamu'alaikum Warahmatullahi Wabarakatuh</h2>
+<section class="couple">
+
+<h2 class="section-title">
+Mempelai
+</h2>
+
+<div class="person">
+
+<img src="assets/images/groom.png" alt="Mempelai Pria">
+
+<h3>Ahmad Fahmi Al Ubaidah</h3>
+
+<p>
+Putra dari
+</p>
+
+<p>
+Bapak Ngadiono Trisadhy
+</p>
+
+<p>
+&
+</p>
+
+<p>
+Ibu Nanik Hariani
+</p>
+
+</div>
+
+<div class="love-icon">
+
+❤
+
+</div>
+
+<div class="person">
+
+<img src="assets/images/bride.jpeg" alt="Mempelai Wanita">
+
+<h3>Ni'matul Laili</h3>
+
+<p>
+Putri dari
+</p>
+
+<p>
+Alm. Bapak Wasito
+</p>
+
+<p>
+&
+</p>
+
+<p>
+Ibu Sunenti
+</p>
+
+</div>
+
+<section class="countdown-section">
+
+    <h2 class="section-title">
+        Menuju Hari Bahagia
+    </h2>
+
+    <div id="countdown" class="countdown-box">
+    </div>
+
+</section>
+
+<section class="event-section">
+
+    <div class="event-card">
+
+        <h2>Ngunduh Mantu</h2>
+
+        <h3>Selasa, 04 Agustus 2026</h3>
+
+        <p>🕐 13.00 WIB – Selesai</p>
+
+        <p>
+            📍 Jl. Kristalan No. 19<br>
+            Singosari, Malang
+        </p>
+
+        <a class="maps-btn"
+        href="https://maps.app.goo.gl/yPo4j9VjCFWzf8aT6?g_st=ac"
+        target="_blank">
+
+            📍 Lihat Google Maps
+
+        </a>
+
+    </div>
+
+</section>
+
+<section class="rsvp-section">
+
+    <h2 class="section-title">
+        Konfirmasi Kehadiran
+    </h2>
+
+    <div class="event-card">
+
+        <form id="rsvpForm">
+
+            <input
+            type="text"
+            id="nama"
+            placeholder="Nama Lengkap"
+            required>
+
+            <select id="hadir">
+
+                <option value="Hadir">
+                    Hadir
+                </option>
+
+                <option value="Tidak Hadir">
+                    Tidak Hadir
+                </option>
+
+            </select>
+
+            <textarea
+            id="ucapan"
+            placeholder="Tulis doa dan ucapan..."
+            rows="5"></textarea>
+
+            <button type="submit">
+
+                Kirim
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<section class="wish-section">
+
+<h2 class="section-title">
+
+Ucapan Tamu
+
+</h2>
+
+<div id="wishList">
+
+</div>
+
+</section>
+</section>
+<p>
+
+Selamat datang di Undangan Ngunduh Mantu
+
+</p>
+
+</div>
+
+<audio id="music">
+
+<source src="assets/music/wilujeng.mp3">
+
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+
+<div id="loader">
+
+    <div class="loader-box">
+
+        <div class="logo">
+
+            A <span>&</span> N
+
+        </div>
+
+        <p>Loading Invitation...</p>
+
+    </div>
+
+</div>
+
+<div class="monogram">
+
+A
+
+<span>&</span>
+
+N
+
+</div>
+
+<img
+src="assets/images/groom.webp"
+loading="lazy"
+decoding="async">
+
+<audio
+id="music"
+preload="auto">
+  
+  const countdown =
+document.getElementById("countdown");
+
+function updateCountdown(){
+
+// isi countdown
+
+requestAnimationFrame(updateCountdown);
+
+}
+
+let maxFlower = 25;
+
+const lowEnd = navigator.hardwareConcurrency <= 4;
+
+if(lowEnd){
+
+// kurangi jumlah bunga
+// matikan blur berat
+// sederhanakan animasi
+
+}
+
+<link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+
+<button id="shareBtn">
+📤 Bagikan Undangan
+</button>
+
+<a class="btn"
+href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Ngunduh+Mantu+Ahmad+%26+Ni%27matul&dates=20260804T060000Z/20260804T100000Z&location=Jl.+Kristalan+19+Singosari+Malang"
+target="_blank">
+
+📅 Simpan ke Kalender
+
+</a>
+
+<button id="topBtn">
+⬆
+</button>
+
+<meta name="description"
+content="Undangan Ngunduh Mantu Ahmad Fahmi Al Ubaidah & Ni'matul Laili">
+
+<meta property="og:title"
+content="Wedding Ahmad & Ni'matul">
+
+<meta property="og:image"
+content="assets/images/cover.webp">
+
+<link rel="icon"
+href="assets/icons/favicon.png">
+
+</html>
